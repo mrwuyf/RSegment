@@ -137,13 +137,13 @@ python GeoSeg/loveda_test.py -c GeoSeg/config/loveda/unet.py -o fig_results/love
 ## Training Your Own Data
 #### Training Step
 First, build your own dataset. For remote sensing images like Gaofen and Sentinel, which are typically 16-bit images, you need to stretch them to 8-bit and select three bands for training. If you want to use multi-band training, read the images using GDAL.
-Use Script in \RSegment\rs_process\makedataset to build dataset
-**stretch_image.py** for 16 to 8
-**crop.py** for croping image
-**irrgb2rgb.py** for changing bands
-**dataug.py** for data augmentation such as random flip, random rotate
-**removezero.py** for removing images which masks are all 0
-**splitdataset.py** for spliting tra set, val set and test set
+Use Script in \RSegment\rs_process\makedataset to build dataset\
+**stretch_image.py** for 16 to 8\
+**crop.py** for croping image\
+**irrgb2rgb.py** for changing bands\
+**dataug.py** for data augmentation such as random flip, random rotate\
+**removezero.py** for removing images which masks are all 0\
+**splitdataset.py** for spliting tra set, val set and test set\
 if you use 4 or more bands, you can read images as follows
 ```python
 gdal.AllRegister()  
@@ -164,9 +164,9 @@ Change inference data folder in config
 ```shell
 python GeoSeg/inference.py -c GeoSeg/config/siluan/unet.py -o fig_results/siluan/unet -t "d4" 
 ```
-Then, use scripts in \RSegment\rs_process\postprocess to mosaic patch
-**crop.py** for croping image to inference
-**removezero.py** for removing images are all 0
+Then, use scripts in \RSegment\rs_process\postprocess to mosaic patch\
+**crop.py** for croping image to inference\
+**removezero.py** for removing images are all 0\
 **mosaic.py** for mosaic patch
 
 ## Acknowledgement  
