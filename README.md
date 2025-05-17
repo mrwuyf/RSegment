@@ -1,5 +1,6 @@
 ## Introduction
 RSegment is a toolbox of remote sensing images segmentation based on [GeoSeg](https://github.com/WangLibo1995/GeoSeg), which aims to help related personnel establishing a comprehensive remote sensing seamtic segmentation workflow.
+rs_process code is in [rsprocess](https://github.com/mrwuyf/rsprocess)
 
 ## Folder Structure
 Prepare the following folders to organize this repo:
