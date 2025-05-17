@@ -171,7 +171,8 @@ Then, use scripts in \RSegment\rs_process\postprocess to mosaic patch\
 **mosaic.py** for mosaic patch
 
 ## Acknowledgement  
-  
+
+  Thanks to previous open-sourced repo:
 - [pytorch lightning](https://www.pytorchlightning.ai/)  
 - [timm](https://github.com/rwightman/pytorch-image-models)  
 - [pytorch-toolbelt](https://github.com/BloodAxe/pytorch-toolbelt)  
