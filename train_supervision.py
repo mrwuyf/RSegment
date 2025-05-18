@@ -113,6 +113,7 @@ class Supervision_Train(pl.LightningModule):
             self.metrics_val.add_batch(mask[i].cpu().numpy(), pre_mask[i].cpu().numpy())
 
         loss_val = self.loss(prediction, mask)
+        self.log('val_loss', loss_val, on_step=False, on_epoch=True)
         return {"loss_val": loss_val}
 
     def on_validation_epoch_end(self):
