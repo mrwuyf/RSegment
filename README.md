@@ -121,7 +121,7 @@ python RSegment/tools/loveda_mask_convert.py --mask-dir data/LoveDA/Val/Urban/ma
 ## Training and Testing
 **Training**
 ```shell
-python RSegment/train_supervision.py -c RSegment/config/vaihingen/unetfomer.py
+python RSegment/train_supervision.py -c RSegment/config/vaihingen/unet.py
 ```
 **Vaihingen Testing**
 ```shell
